@@ -1,42 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-    header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-}
-li, a {
-    font-family: montserrat;
-    font-weight: 600;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.logo {
+img {
     cursor: pointer;
-    height: 60px;
+    height: auto;
     width: 70px;
-}
-.nav_links {
-    list-style: none;
-}
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-nav, img-slider {
-    align-items: left;
+    margin-left: 30px;
 }
 
-.slideshow-container {
-    max-width: fit-content;
-    position: absolute;
+.dropdown {
     margin: auto;
 }
-img {
-    width: 120%;
+
+nav {
+    height: 60px;
+    background-color: #025263;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    background-color: #025263;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    color:aliceblue ;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #049BBD;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 400px;
+    float: none;
+    display: list-item;
+    position: relative;
+    
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    letter-spacing: 150px;
+    font-size: 16px;
+}
