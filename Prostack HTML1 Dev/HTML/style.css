@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-photo/two-happy-students-with-backpacks-books-their-hands-smiling-camera_8353-6384.jpg?t=st=1653576694~exp=1653577294~hmac=8f1a9c1e472222bbfdfb11de8494ea800230b9895e30eddc5f530be8bca84900&w=900);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
 img {
     cursor: pointer;
-    height: auto;
-    width: 70px;
-    margin-left: 30px;
+    height: 60px;
+    margin-left: 50px;
+    padding: 10px;
+    
 }
 
 .dropdown {
     margin: auto;
 }
 
-nav {
-    height: 60px;
-    background-color: #025263;
+header {
+    height: 80px;
+    background-color: #025159;
+    opacity: 90%;
 }
 
 nav ul {
     padding: 0;
     margin: 0;
     float: right;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 nav ul li {
-    background-color: #025263;
+    background-color: #025159;
     position: relative;
-    list-style: none;
+    list-style:none;
     display: inline-block;
 }
 
@@ -38,17 +48,17 @@ nav ul li a {
     font-family: poppins;
     font-size: 20px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 80px;
     text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    background-color: #049BBD;
+    background-color: #F23005;
 }
 
 nav ul ul {
-    position: absolute;
-    top: 50px;
+    position:absolute;
+    top: 80px;
     display: none;
 }
 
@@ -61,12 +71,11 @@ nav ul ul li {
     float: none;
     display: list-item;
     position: relative;
-    
 }
 
 nav ul ul ul li {
     position: relative;
     top: -60px;
     letter-spacing: 150px;
-    font-size: 16px;
 }
+
