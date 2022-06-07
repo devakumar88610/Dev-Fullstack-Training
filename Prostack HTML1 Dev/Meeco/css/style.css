@@ -1,39 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-*{
-    font-family: 'poppins' sans-serif;
-}
-
-.navbar{
-    position:sticky;
-    top: 0;
-    z-index: 4;
-}
-
-.navbar-nav {
+.navbar-nav a{
     font-family: 'poppins';
     font-weight: 500;
 }
 
-.navbar .nav-link {
-    margin-left: 18px;
+.btn {
+    color: #fff;
+    background: linear-gradient(to right, #21367F 0%, #0298CA 100%);
+    border-color: #0298CA;
+    font-family: "poppins";
 }
 
-.form-inline .form-control {
-    width: 800px;
+.btn:hover {
+    color: #fff;
+    background: linear-gradient(to right, #0298CA 0%, #21367F 100%);
+    border-color: #0298CA;
 }
-.btn{
+
+.fa-brands {
     color: white;
-    border-color: white;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.navbar 
-
-/* ---- Slider ---- */
-.carousel-item {
-    height: 100vh;
-    min-height: 100px;
-    background: no-repeat scroll center scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
+.form-inline .form-check {
+    width: 100%;
 }
+
+@media (max-width: 1200px) {
+    .form-inline {
+    display: inline-block;    
+    }
+    @media (min-width: 480px) {
+        .form-inline {
+        display: none;    
+        }
+    }
+}
+
+
